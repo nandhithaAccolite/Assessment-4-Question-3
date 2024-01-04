@@ -1,0 +1,12 @@
+<!-- card.component.html -->
+<div class="card" [class.flipped]="flipped" (click)="flipCard()" [class.hidden]="isHidden">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="{{ frontImage }}" alt="Front Image" >
+      </div>
+      <div class="card-back">
+        <img src="{{ backImage }}" alt="Back Image">
+      </div>
+    </div>
+  </div>
+  

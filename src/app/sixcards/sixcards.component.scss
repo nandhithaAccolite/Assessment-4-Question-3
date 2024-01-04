@@ -1,0 +1,100 @@
+/* Add these styles to your component's CSS file or styles.scss */
+
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100% - 260px); /* Adjust the height based on your design */
+  background-color: #ecf0f1; /* Clouds color for the background */
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 25%; /* Adjust the width based on your design */
+  margin: 0px auto; /* Center the rows and add some margin */
+}
+
+.row app-card {
+  margin: 0px; /* Adjust the margin between cards */
+  flex-basis: calc(16.666% - 20px); /* 16.666% to fit exactly 6 cards with margins in a row */
+  box-sizing: border-box;
+}
+
+/* Optional: Give a subtle box-shadow to cards for a card-like appearance */
+app-card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header {
+  background-color: #3498db;
+  color: #ecf0f1;
+  text-align: center;
+  padding: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-bottom: 2px solid #2980b9;
+}
+
+/* Adjust the height of the card container in the scoreboard styles */
+.scoreboard {
+  background-color: #3498db; /* Blue color for the background */
+  color: #ecf0f1; /* Clouds color for the text */
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex; /* Display its children in a flex container */
+  justify-content: space-around; /* Space them evenly */
+  align-items: center; /* Center them vertically */
+}
+
+.scoreboard p {
+  font-size: 18px; /* Decrease the font size to 18px, adjust as needed */
+  margin: 0; /* Remove the default margin */
+}
+
+/* Optional: Give a subtle box-shadow for separation from the main content */
+.scoreboard::after {
+  content: '';
+  display: block;
+  height: 2px;
+  background-color: #2980b9; /* Darker blue color for the border */
+  margin-top: 5px;
+}
+nav {
+  background-color: #3498db; /* Blue color for the background */
+  color: #ecf0f1; /* Clouds color for the text */
+  text-align: center;
+  padding: 10px;
+  top: 0;
+  width: 100%;
+  display: flex; /* Display its children in a flex container */
+  justify-content: space-around; /* Space them evenly */
+  align-items: center; /* Center them vertically */
+}
+h1{
+  margin-left: 350px;
+  margin-top:10px;
+}
+a {
+  text-decoration: none;
+  color: #ecf0f1; /* Clouds color for the text */
+  font-size: 18px;
+  margin-left: 20px;
+  transition: color 0.3s;
+  padding-right:20px;
+}
+
+a:hover {
+  color: #cc362e; /* Emerald color on hover */
+}

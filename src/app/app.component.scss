@@ -1,0 +1,72 @@
+/* Add these styles to your component's CSS file or styles.scss */
+
+nav {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    align-items: center;
+    text-align:center;
+    margin:20px;
+    background-color: #05090c; /* Blue color for the background */
+    padding: 10px 20px;
+  }
+  
+  h1{
+    margin-left: 500px;
+    color:#ecf0f1;
+
+  }
+  a {
+    text-decoration: none;
+    color: #ecf0f1; /* Clouds color for the text */
+    font-size: 18px;
+    margin-left: 20px;
+    transition: color 0.3s;
+  }
+  
+  a:hover {
+    color: #2ecc71; /* Emerald color on hover */
+  }
+
+  .six{
+    display: inline-block;
+    margin-top:100px;
+    margin-left: 150px;
+    text-align: center;
+    width:300px;
+    height:100px;
+  }
+  .twelve {
+    display: inline-block;
+    margin-top:100px;
+    margin-left: 290px;
+    text-align: center;
+    width:300px;
+    height:100px;
+  }
+  
+  .six a,
+  .twelve a {
+    text-decoration: none;
+    color: #ecf0f1; /* Clouds color for the text */
+    font-size: 14px; /* Font size */
+    transition: background-color 0.3s, transform 0.3s;
+    display: block;
+    padding: 10px;
+    background-color: #3498db; /* Blue color for the background */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for a card-like appearance */
+  }
+  
+  .six:hover a,
+  .twelve:hover a {
+    background-color: #2980b9; /* Darker blue color on hover */
+    transform: scale(1.05); /* Slight scale increase on hover for a button-like effect */
+  }
+  
+  .info1,
+  .info2 {
+    display: inline-block;
+    font-size: 30px;
+  }
+  
